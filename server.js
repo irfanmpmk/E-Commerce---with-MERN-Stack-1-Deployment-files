@@ -18,7 +18,8 @@ dotenv.config();
 connectDB();
 
 //esmodule filepath fix
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const __filename = fileURLToPath(import.meta.url);
+const __dirnmae = path.dirname(__filename);
 
 
 //rest object
